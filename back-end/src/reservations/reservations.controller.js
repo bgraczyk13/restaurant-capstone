@@ -92,6 +92,12 @@ function hasValidDate(req, res, next) {
       message: `The restaurant is closed on Tuesdays. Please select a different day.`,
     });
   }
+  if (submitDate < today) {
+    return next({
+      status: 400,
+      message: `Reservation must be made for a future date.`,
+    });
+  }
 
   // if editing, don't do final check for past date
   if (res.locals.reservation) {
