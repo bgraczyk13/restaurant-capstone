@@ -38,6 +38,9 @@ function Routes() {
       <Route path="/tables/new">
         <Tables />
       </Route>
+      <Route path="/search">
+        <Search />
+      </Route>
       <Route>
         <NotFound />
       </Route>
