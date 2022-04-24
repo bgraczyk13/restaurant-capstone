@@ -7,6 +7,7 @@ import { today } from "../utils/date-time";
 import useQuery from "../utils/useQuery";
 import Tables from "../tables/Tables";
 import Seat from "../seat/Seat";
+import Search from "../search/Search";
 
 /**
  * Defines all the routes for the application.
